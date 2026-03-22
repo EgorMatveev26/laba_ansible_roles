@@ -3,12 +3,12 @@
   hosts: webservers
   become: true
   #become_method: sudo
-  
+
   vars:
     sites:
       - mehmat.ru
       - fizfak.ru
       - etis.com
-  
+
   roles:
     - role: nginx

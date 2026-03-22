@@ -17,7 +17,7 @@
   loop: "{{ sites }}"
   notify: Reload Nginx
 
-# Включаем сайты (создаём symlink) 
+# Включаем сайты (создаём symlink)
 - name: Enable vhost sites
   ansible.builtin.file:
     src: "/etc/nginx/sites-available/{{ item }}.conf"
